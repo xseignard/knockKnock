@@ -36,7 +36,7 @@
 		// fftData is an array of length fftSize/2 with values from 0 to 255
 		var fftData = new Uint8Array(analyser.frequencyBinCount);
 		analyser.getByteFrequencyData(fftData);
-		checkForKnock(fftData, 50);
+		checkForKnock(fftData, 40);
 
 		// drawing canvas
 		canvasCtx.fillStyle = 'rgb(0, 0, 0)';
